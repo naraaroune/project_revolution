@@ -3,31 +3,18 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd">
  
 <web-app>
-
-
 	<context-param>
 		<param-name>config</param-name>
 		<param-value>../../resources/config.ini</param-value>
 	</context-param>
 
 	<servlet>
-		<servlet-name>
-			Servlet
-		</servlet-name>
-		<servlet-class>
-		org.esgi.web.FrontController
-		</servlet-class>
+		<servlet-name>default</servlet-name>
+		<servlet-class>org.esgi.web.FrontController</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
-		<url-pattern>/res/*</url-pattern>
-	</servlet-mapping>
-
-
-	
-	<servlet-mapping>
-		<servlet-name>Servlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 
