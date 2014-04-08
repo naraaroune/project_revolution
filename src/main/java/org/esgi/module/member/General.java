@@ -14,7 +14,7 @@ public class General extends AbstractAction {
 	public void execute(IContext context) throws Exception {
 		
 		CONFIG = new Properties();
-		
+		 
 		if(context.getRequest().getSession().getAttribute("account") != null) {
 			// BIND CONTEXT ATTRIBUTES 
 			context.setDescription(General.CONFIG.getProperty("description"));
