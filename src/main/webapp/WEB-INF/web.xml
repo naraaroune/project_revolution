@@ -5,16 +5,16 @@
 <web-app>
 	<context-param>
 		<param-name>config</param-name>
-		<param-value>../../resources/config.ini</param-value>
+		<param-value>WEB-INF/config.ini</param-value>
 	</context-param>
 
 	<servlet>
-		<servlet-name>default</servlet-name>
+		<servlet-name>servletFrontController</servlet-name>
 		<servlet-class>org.esgi.web.FrontController</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>default</servlet-name>
+		<servlet-name>servletFrontController</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 

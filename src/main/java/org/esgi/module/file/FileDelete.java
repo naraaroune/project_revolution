@@ -7,7 +7,7 @@ import org.esgi.web.action.AbstractAction;
 import org.esgi.web.action.IContext;
 
 public class FileDelete extends AbstractAction {
-
+ 
 	@Override
 	public void execute(IContext context) throws Exception {
 		File repo = new File((String) context.getProperties().get("file.repository"));

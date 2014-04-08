@@ -44,7 +44,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>SemJavaWeb</finalName>
+    <finalName>myges</finalName>
     <plugins>
     	<plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -69,7 +69,9 @@
               <phase>install</phase>
               <configuration>
                 <tasks>
-                  
+                  <copy todir="../../apache-tomcat-6.0.39/webapps/myges/">
+				    <fileset dir="target/myges"/>
+				  </copy>
                 </tasks>
               </configuration>
               <goals>
@@ -78,6 +80,18 @@
             </execution>
           </executions>
         </plugin>
+     	<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<configuration>
+				<webResources>
+					<resource>
+						<directory>src/resources</directory>
+						<targetPath>WEB-INF</targetPath>
+					</resource>
+				</webResources>
+			</configuration>
+		</plugin>
     </plugins>
   </build>
 </project>
