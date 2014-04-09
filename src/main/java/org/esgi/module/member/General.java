@@ -1,5 +1,6 @@
 package org.esgi.module.member;
 
+import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.esgi.web.action.AbstractAction;
@@ -7,15 +8,30 @@ import org.esgi.web.action.IContext;
 
 public class General extends AbstractAction {
 
+	public static String PATHPROPERTIES = "/org/esgi/module/member/";
+	public static String NAMEPROPERTIESFILE = "config.ini";
 	public static String NAMEPAGE = "account";
 	public static Properties CONFIG;
 	
 	@Override
 	public void execute(IContext context) throws Exception {
 		
+		// Open properties files
 		CONFIG = new Properties();
+		
+		FileInputStream input = new FileInputStream(PATHPROPERTIES + NAMEPROPERTIESFILE);
+
+	    try{
+	    	CONFIG.load(input);
+	    } catch(Exception e) {
+	    	System.out.println("Impossible d'ouvrir le fichier de configuration = " + e.getMessage());
+	    	context.getResponse().sendRedirect(context.getRequest().getContextPath());
+	    } finally {
+	         input.close();
+	    }
 		 
 		if(context.getRequest().getSession().getAttribute("account") != null) {
+			
 			// BIND CONTEXT ATTRIBUTES 
 			context.setDescription(General.CONFIG.getProperty("description"));
 			context.getVelocityContext().put("title", General.CONFIG.getProperty("title"));
@@ -36,7 +52,7 @@ public class General extends AbstractAction {
 			context.getVelocityContext().put("linkTeacherTrombinoscope", General.CONFIG.getProperty("linkTeacherTrombinoscope"));
 			
 		} else {
-			context.getResponse().sendRedirect(context.getRequest().getContextPath());;
+			context.getResponse().sendRedirect(context.getRequest().getContextPath());
 		}
 		
 	}
