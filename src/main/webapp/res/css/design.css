@@ -1,0 +1,296 @@
+@font-face
+{
+	font-family: 'tt1254m_';
+	src: url('../polices/tt1254m_.ttf');
+}
+#poste
+{
+	font-family: 'tt1254m_';
+}
+body
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background: #2f3034;
+}
+
+#competence
+{
+	background: #F14C4C;
+
+}
+
+#banniere
+{
+	width: 1057px;
+	height : 98px;
+	background: url("../images/banniere2.png")no-repeat;
+	margin: auto;
+	padding : 0px 0px 0px 0px;
+
+}
+
+.espaceClient {
+	margin-top : 15px;
+	margin-left : 150px;
+	background : white;
+	padding : 10px;
+	width : 300px;	
+}
+
+.espaceClient table tr td {
+	padding : 5px;
+}
+
+.espaceClient table tr td input {
+	width : 120px;
+}
+
+
+#sousBanniere
+{
+	width: 600px;
+	height : 2px;
+	font-size : 13px;
+	margin: auto;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	
+}
+
+
+
+#sousBanniere a
+{
+	font-family: 'tt1254m_';
+	text-decoration: none;
+	color: white;
+}
+
+#sousBanniere a:hover
+{
+	border-bottom: 1px solid white;
+}
+
+#sousBanniere ul li 
+{
+	float: left;
+	width: 140px;
+	list-style-type: none;
+}
+
+.log_
+{
+	width:300px;
+	height:50px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.image_pre img
+{
+	width:200px;
+	height:140px;
+	float: left;
+	margin-right: 30px;
+	border : 1px solid #CACACA;
+}
+
+#sousBanniere ul  
+{
+	margin : 0px 0px 0px 0px;
+}
+
+#topCorps
+{
+	margin: auto;
+	width: 1000px;
+	height : 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#middleCorps
+{
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 1057px;
+	min-height : 750px;
+	margin: auto;
+}
+
+#footCorps
+{
+	text-align: center;
+	width: 1057px;
+	height:50px;
+	background: url('../images/footCorps.png');
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+#formation
+{
+	border: 2px solid black;
+	background: white;
+	width: 800px;
+	margin-left : 40px;
+	padding : 10px 10px 10px 10px;
+}
+
+#identite
+{
+	width: 450px;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+	color : black;
+	background: white;
+	vertical-align : middle;
+	font-family: 'Cursive';
+	color: #8D8989;
+
+}
+
+
+#poste
+{
+	text-align: right;
+	margin-right: 25px;
+	padding: 10px 10px 10px 10px;
+	font-size: 20px;color : white;
+}
+
+#vide
+{
+	background: rgba(162, 45, 45, 0.88);
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+#descriptif
+{
+	display: inline-block;
+	height: 35px;
+	padding-left: 5px;
+	padding-top: 3px;
+	vertical-align: middle;
+	font-family: 'tt1254m_';
+	text-decoration: none;
+	color : white;
+}
+
+#categorie
+{
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 1000px;
+	height: 25px;
+	margin-bottom : 10px;
+}
+
+#cursusAnnee
+{
+		text-align: center;
+		width: 130px;
+		font-size: 14px;
+		font-weight: bold;
+		font-size: 11px;
+		margin-right: 0px;
+		font-family: "cabrial", "Apple Gothic", sans-serif;
+		color: #CE2121;
+		display:table-cell;
+		vertical-align: middle;
+
+}
+
+#cursusDescriptif
+{
+		padding: 10px 10px 10px 10px;
+		margin-left: 0px;
+		width: 825px;	
+		font-size: 13px;
+		font-family: "cabrial", "Apple Gothic", sans-serif;
+
+		display:table-cell;
+		vertical-align: middle;
+}
+
+#ligneAccueil
+{
+	
+	margin-left: 25px;
+	width: 1002px;
+	margin-left: 25px;
+	width: 1002px;
+	font-size: 14px;
+	font-family: 'Cursive';
+	text-align: justify; 
+	color: #8D8989;
+	background: white;
+	border-bottom: 1px dotted black;
+	padding-bottom: 35px;
+}
+
+
+#ligne
+{
+	
+	margin-left: 25px;
+	width: 1002px;
+	margin-left: 25px;
+	width: 1002px;
+	font-size: 14px;
+	font-family: 'Cursive';
+	text-align: justify; 
+	color: #8D8989;
+	background: white;
+	border-bottom: 1px dotted black;
+	
+}
+
+#ligne_
+{
+	border-bottom: 1px dotted black;
+	margin-left: 25px;
+	width: 1002px;
+	margin-left: 25px;
+	width: 1002px;
+	font-size: 14px;
+	font-family: 'Cursive';
+	text-align: justify; 
+	color: #8D8989;
+	background: white;
+
+}
+
+h3
+{
+	padding-top: 40px;
+	margin-top:0px;
+	color : rgb(213, 44, 44);
+	font-size: 19px;
+	font-family: 'calibri';
+	margin-left: 40px;
+	width: 400px;
+	
+}
+
+h3 img
+{
+	padding-right: 10px; 
+	vertical-align: middle;
+	width: 40px;
+
+}
+
+#presentation
+{
+	font-size: 14px;
+	margin-left: 40px;
+	width: 920px;
+	font-family: 'Cursive';
+	text-align: justify; 
+	color: #8D8989;
+}

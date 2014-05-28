@@ -18,7 +18,7 @@ public class FileDownload extends AbstractAction{
 		String path = (String) context.getParameter("path");
 		File f = new File(context.getProperties().get("file.repository").toString() + "/" + path );
 		System.out.println(f.getPath());
-		if (!f.isDirectory()){
+		if (!f.isDirectory()) {
 			/*byte buffer[] = new byte[16384];
 			OutputStream outbin = context.getResponse().getOutputStream();
 			InputStream inbin = Files.newInputStream(Paths.get(f.getAbsolutePath()));

@@ -1,0 +1,32 @@
+<div id="container">
+
+<div id="middleCorps">
+		<h3>Absences et retards</h3>
+		<div id="competence">
+		#if( $session.getUser() )
+			<table class="notification">
+				<tr>
+					<th>Date</th>
+					<th>Matiere</th>
+					<th>Type</th>
+					<th>Justifie</th>
+				</tr>
+				#foreach($item in $notification)
+				<tr>
+					<td>$item.getDate()</td>
+					<td>$item.getMatiere()</td>
+					<td>$item.getType()</td>
+					<td>$item.getJustifie()</td>
+				</tr>
+				#end
+			</table>
+			
+			Absences non justifiées : $countNotJustifiedAbsence, Retards non justifiés : countNotJustifiedInLate
+		#else 
+			Veuillez vous connectez pour acceder a vos notifications d'absence ou  de retard
+		#end
+			
+		</div>
+
+	</div>
+</div>

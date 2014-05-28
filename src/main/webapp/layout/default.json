@@ -9,3 +9,17 @@
 	                 }
 	                 ]
 }
+
+# <shared/html>
+# 	<shared/main_header>
+#		<element>__CURRENT__</element>
+#	</shared/main_header>
+# </shared/html>
+# <shared/html>
+# 	<element>__CURRENT__</element>
+# </shared/html>
+# <shared/html>
+# 	<shared/main_footer>
+#		<element>__CURRENT__</element>
+#	</shared/main_footer>
+# </shared/html>

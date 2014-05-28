@@ -93,6 +93,7 @@ public class JsonExtractor {
 		
 		if(root.isContainerNode()){
 			String name = getNodeName(root);
+			
 			String parentName = getNodeName(parent);
 			JsonNode value = root.findValue(name);
 			

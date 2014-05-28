@@ -1,11 +1,10 @@
-
-package org.esgi.module.index;
+package org.esgi.module.notification;
 
 import org.esgi.web.action.AbstractAction;
 import org.esgi.web.action.IContext;
 
-public class Index extends AbstractAction{
-	
+public class Notification extends AbstractAction {
+
 	@Override
 	public void execute(IContext context) throws Exception {
 		context.setPageTitle("MYGES");
@@ -13,7 +12,7 @@ public class Index extends AbstractAction{
 	
 	@Override
 	public String getRoute() { 
-		return "/";
+		return "/notification";
 	}
-	
+
 }

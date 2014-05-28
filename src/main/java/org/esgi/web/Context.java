@@ -110,7 +110,7 @@ public class Context implements IContext {
 	}
 	@Override
 	public void addCSSDependency(String url) {
-		cssUrls.add(url);
+		cssUrls.add("http://" + getRequest().getServerName()+ ":" + getRequest().getServerPort() + "/myges" + url);
 	}
 	@Override
 	public void addInlineCSS(String cssRule) {
@@ -157,6 +157,10 @@ public class Context implements IContext {
 	}
 	public Set<String> getJsUrls() {
 		return jsUrls;
+	}
+
+	public Set<String> getCssUrls() {
+		return cssUrls;
 	}
 	
 

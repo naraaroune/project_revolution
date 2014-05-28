@@ -11,12 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.velocity.app.Velocity;
-import org.esgi.module.file.FileDelete;
-import org.esgi.module.file.FileDownload;
-import org.esgi.module.file.FileList;
-import org.esgi.module.file.FileUpload;
 import org.esgi.module.index.Index;
-import org.esgi.module.user.Connect;
 import org.esgi.web.action.IAction;
 import org.esgi.web.action.IContext;
 import org.esgi.web.layout.LayoutRenderer;
@@ -31,12 +26,8 @@ import org.esgi.web.route.Router;
  * exemple validateur de champs ou compression gzip.
  *
  */
-public class FrontController extends HttpServlet{
+public class FrontController extends HttpServlet {
 
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	Router router = new Router();
 	Properties properties = new Properties();
@@ -61,26 +52,29 @@ public class FrontController extends HttpServlet{
 		configVelocity.setProperty("file.resource.loader.path", config.getServletContext().getRealPath("/") + properties.getProperty("template.path")+ "/");
 		Velocity.init(configVelocity);
 
+		/*
 		registerAction(new FileList());
 		registerAction(new FileDownload());
 		registerAction(new FileUpload());
 		registerAction(new FileDelete());
-		registerAction(new Index());
 		registerAction(new Connect());
-
+		*/
+		
+		registerAction(new Index());
+		
 		layoutRender = new LayoutRenderer();
-	}
+		
+	} 
+	
 	@Override
 	public void service(HttpServletRequest 
 			request, HttpServletResponse response)
 					throws ServletException, IOException {
-
 		String url = request.getPathInfo();
 		IContext context = createContext(request, response);
 		IAction action = router.find(url, context);
-
+		
 		properties.put("context", request.getContextPath());
-
 
 		if (null != action){
 

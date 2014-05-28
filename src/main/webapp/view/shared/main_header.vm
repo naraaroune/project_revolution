@@ -1,6 +1,35 @@
 <div class="container">
 <header class="row">
-<div class="col-md-12">
-	<h1>$title</h1>
+<div class="espaceClient">
+#if( $session.getUser() )
+	Bienvenue sur Myges <br />
+	Login : $session.getUser().getLogin();
+	Email :  $session.getUser().getEmail();
+	<a href="">Deconnexion</a>
+#else 
+	<form name="connexion" action="/index" method="POST" >
+		Veuillez saisir vos identifiants de connexion<br/>
+		<table>
+		<tr>
+			<td> Login </td> 
+			<td> <input type="text" name="login" /> </td>
+		</tr>
+		<tr>
+			<td> Mot de passe </td>
+			<td> <input type="text" name="password" /> </td>
+		</tr>
+		</table>
+	</form>
+	<input type="submit" name="submit" value="Connexion" />
+#end
+</div>
+
+<div id="sousBanniere">
+	<ul>
+		<li><a href="/notification">ABSENCE/RETARD</a></li>
+		<li><a href="">RESULTAT</a></li>
+		<li><a href="">SUPPORT DE COURS</a></li>
+		<li><a href="">ADMINISTRATION</a></li>
+	</ul>
 </div>
 </header>

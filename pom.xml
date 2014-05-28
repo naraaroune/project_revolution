@@ -46,14 +46,6 @@
   <build>
     <finalName>myges</finalName>
     <plugins>
-    	<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-               <source>1.7</source>
-               <target>1.7</target>
-            </configuration>
-         </plugin>
       <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-compiler-plugin</artifactId>
@@ -69,7 +61,7 @@
               <phase>install</phase>
               <configuration>
                 <tasks>
-                  <copy todir="../../apache-tomcat-6.0.39/webapps/myges/">
+                  <copy todir="../../tomcat/webapps/myges/">
 				    <fileset dir="target/myges"/>
 				  </copy>
                 </tasks>

@@ -1,6 +1,45 @@
-$context.setPageTitle("Welcome")
-
 <div id="container">
+
+<div id="middleCorps">
+
+		<div id="competence">
+			<div id="ligneAccueil">
+				<img src='res/images/1.0_log.png' class='log_' />
+				<h3><img src='res/images/nuage.png' /> Un projet : Myges</h3>
+
+				<div id="presentation">
+					<div class="image_pre"><img src="/res/images/portfolio.jpg"/></div>
+					Myges est un gestionnaire de resultat scolaire, vous pourrez acceder a vos resultat en toute simplicité.<br/>
+					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+					Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+					Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+
+					On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. 
+					Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut,
+					et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, 
+					souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
+
+				</div>
+				<br><br>
+				<h3><img src='res/images/nuage.png' />Avancement du projet</h3>
+
+				<div id="presentation">
+					<div class="image_pre"><img src="res/images/service.jpg" style="float:right;margin-right:0px;margin-left:15px;"/></div>
+				
+					Myges est un gestionnaire de resultat scolaire, vous pourrez acceder a vos resultat en toute simplicité.<br/>
+					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+					Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+					Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+
+					On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. 
+					Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut,
+					et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, 
+					souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 
 #set ($js = $context.getProperties().get("context")+"/res/js/user/connect.js")
